@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Picture of the Day</title>
+</head>
+<body>
+    <h1>NASA Picture of the Day</h1>
+<section id="container">
+    <h2 id="titleDisplay"></h2>
+    <div id="pictureDisplay"></div>
+    <div id="textDisplay"></div>
+</section>
+<section id="datePicker">
+    <h3>Get picture by date:</h3>
+    <div>
+        <label for="year">Choose year:</label>
+        <select name="years" id="years"></select>
+
+        <label for="month">Choose month:</label>
+        <select name="months" id="months"></select>
+
+        <label for="day">Choose day:</label>
+        <select name="days" id="days"></select>
+    
+        <button class="button-30" role="button" id="fetchByDateButton">Get Picture!</button>
+    </div>
+</section>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
