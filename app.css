@@ -35,6 +35,7 @@ select {
     height: auto;
     max-height: 500px;
     display: block;
+    object-fit: contain;
 }
 
 #datePicker {

@@ -174,7 +174,6 @@ function fetchDataByDate() {
     const selectedMonth = parseInt(monthFromDropdown.value);
     const selectedDay = parseInt(dayFromDropdown.value);
     
-        //kui üks väärtustest on puudu, siis ei lähe nupuvajutusega edasi.
      if (!selectedYear || !selectedMonth || !selectedDay) {
         if(!selectedYear){
             yearFromDropdown.classList.add('notSelected');
@@ -212,9 +211,3 @@ populateYears();
 populateMonths(currentYear);
 setDefaultMonthOption();
 populateDays(new Date().getFullYear(), new Date().getMonth());
-
-
-//TODO:
-//6. peida API key ära, kuidas? kas koodist ei tohiks seda näha olla? Env variables kuidagi?
-//7. tulevikukuupäevade valimine ei saa olla võimalik - ainult kuupäeva osa veel teha. kuu valik töötab.
-//8. kui aastat/kuud/päeva pole valitud, siis viskab nupu vajutamisel need punaseks vms (ei saa nuppu vajutada)
